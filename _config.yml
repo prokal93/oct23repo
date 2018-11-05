@@ -1,0 +1,10 @@
+theme: minima
+title: Oct23Repo
+header_pages:
+  - projects.md
+  - about.md
+jekyll_comments:
+  show_comments: "yes"
+  allow_new_comments: "yes"
+  comment_server: http://localhost:5001
+  service_token: 3684f87522a741ef9766b76b09edb3c9ZZZZZ
