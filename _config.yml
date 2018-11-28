@@ -7,4 +7,4 @@ jekyll_comments:
   show_comments: "yes"
   allow_new_comments: "yes"
   comment_server: http://localhost:5001
-  service_token: 3684f87522a741ef9766b76b09edb3c9ZZZZZ
+  service_token: 84cdeefe07d14b5aaa9c10dea9cd05e6

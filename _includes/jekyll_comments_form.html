@@ -93,10 +93,18 @@ div#comment-submit-message {
 <script>
   $(function() {
     $('#comment-form').on('submit', function(e) {
+
         e.preventDefault();
+
+        // Disable submit button
         $(".form-button").prop("disabled", true);
         $(".form-button span").html("Submitting");
         $(".form-button span").addClass('form-button-disabled')
+
+        // Remove any old message (may happen if user resubmitting after error
+        $('#comment-submit-message').removeClass('comment-message-bg-error');
+        $("#comment-submit-message").html("");
+
         $.ajax({
           url: $(this).attr('action'),
           method: "POST",
